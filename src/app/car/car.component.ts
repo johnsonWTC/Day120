@@ -22,6 +22,7 @@ export class CarComponent implements OnInit {
 
 
   hide = false;
+  Hide = "Button From Ts";
   
   HideAndShowButton(){
     this.hide = ! this.hide;
