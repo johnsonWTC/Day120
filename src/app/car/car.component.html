@@ -1,1 +1,19 @@
-<p>car works!</p>
+<div [hidden]="hide">
+    <table>
+        <tr>
+            <th>Car Type</th>
+            <th>Door Calor</th>
+            <th>wheel Size</th>
+        </tr>
+        <tr *ngFor="let car of cars">
+            <td>{{car.carType}}</td>
+            <td>{{car.doorCalor}}</td>
+            <td>{{car.wheelSize}}</td>
+        </tr>
+    
+        
+    </table>    
+</div>
+<button (click)="HideAndShowButton()">Hide</button>
+
+

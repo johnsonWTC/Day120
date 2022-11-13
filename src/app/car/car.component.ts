@@ -21,15 +21,22 @@ export class CarComponent implements OnInit {
   }
 
 
+  hide = false;
+  
+  HideAndShowButton(){
+    this.hide = ! this.hide;
+  }
+
+
   cars : Car[] = [
     {
       carType: "BMW",
       doorCalor: "Red",
-      wheelSize: 20
+      wheelSize: 10
     }, {
       carType: "Figo",
       doorCalor: "blue",
-      wheelSize: 20
+      wheelSize: 25
     },
     {
       carType: "Polo",
